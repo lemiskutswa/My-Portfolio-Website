@@ -46,13 +46,13 @@
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
 
                     
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Web Development</span><br>Building Web Applications</li>
                             <li><span>Technical Writing</span><br>Writing technical articles for blogs</li>
@@ -60,7 +60,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2023 - </span><br>Freelancing software developer at Fiverr</li>
                             <li><span>2021 - 2023</span><br>Content Marketer for IconicWP, MarketPress, & Barn2 Media</li>
@@ -68,7 +68,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2022 - 2023</span><br>Software Engineering at ALX Africa</li>
                             <li><span>2021 - 2022</span><br>Mobile Web Development at Pluralsight</li>
@@ -79,5 +79,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
