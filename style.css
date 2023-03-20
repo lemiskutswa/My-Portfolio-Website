@@ -362,4 +362,13 @@ form .btn2{
 
 /*--------------CSS for small screens-----------*/
 
-@media only 
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: none;
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+}
