@@ -361,6 +361,7 @@ form .btn2{
 }
 
 /*--------------CSS for small screens-----------*/
+nav
 
 @media only screen and (max-width: 600px){
     #header{
@@ -368,7 +369,7 @@ form .btn2{
     }
 
     .header-text{
-        margin-top: 0;
+        margin-top: 30%;
         font-size: 16px;
     }
 
