@@ -391,6 +391,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
     nav ul li{
         display: block;
@@ -401,5 +402,8 @@ nav .fas{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .subtitle{
+        font-size: 35px;
     }
 }
