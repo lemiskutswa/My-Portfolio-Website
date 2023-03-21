@@ -30,7 +30,7 @@
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Lemis</span><br> Kutswa from Kenya</h1>
+                <h1>Hi, I'm <span>Lemis Kutswa</span><br>from Kenya</h1>
             </div>
     </div>
 
@@ -172,9 +172,9 @@
 
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
@@ -186,5 +186,16 @@
 </div>
 
 <script src="script.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwIY-O2UNbU1zqZQ5kg4AOei4GgAgu2BQPWsroBXx-TT7qnWMgCmai9VbHRfqvPKUOf/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
